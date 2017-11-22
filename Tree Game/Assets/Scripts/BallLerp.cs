@@ -69,7 +69,7 @@ public class BallLerp : MonoBehaviour {
 	}
 
 
-	bool GoLeft(){
+	public bool GoLeft(){
 		startTime = Time.time;
 		distCovered = 0;
 		if (head.leftChild == null)
@@ -82,7 +82,7 @@ public class BallLerp : MonoBehaviour {
 
 	}
 
-	bool GoRight(){
+	public bool GoRight(){
 		startTime = Time.time;
 		distCovered = 0;
 		if (head.rightChild == null)
@@ -95,7 +95,7 @@ public class BallLerp : MonoBehaviour {
 
 	}
 
-	bool GoBack(){
+	public bool GoBack(){
 		startTime = Time.time;
 		distCovered = 0;
 		if (head.head == null)
